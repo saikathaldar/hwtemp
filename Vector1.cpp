@@ -5,14 +5,10 @@
 int main()
 {
 
-std::vector<int> cust_id(2);
+std::vector<int,std::allocator<int>> cust_id;
 std::vector<int>::iterator cust_id_it;
 
 int id = 45;
-
-cust_id[0]=10;
-cust_id[1]=20;
-
 cust_id.push_back(id);
 id=33;
 cust_id.push_back(id);
